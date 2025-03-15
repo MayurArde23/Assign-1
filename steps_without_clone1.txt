@@ -17,7 +17,5 @@ git branch -m main
 5] Option 1: Pull Changes and Merge (Recommended)
    git pull origin main --rebase
   
-
- 
-
+****> Finale Push command for every newly commited files of existed files
 git push -u origin main
