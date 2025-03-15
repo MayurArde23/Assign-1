@@ -1,0 +1,113 @@
+Date: 11 March 2025
+1. What does git rm do?
+A) Removes a file from the working directory and staging area
+B) Deletes a file permanently from the Git repository and history
+C) Moves a file to another branch
+D) Unstages a file without deleting it
+Ans:A) Removes a file from the working directory and staging area
+--------------------------
+2. Which command removes a file from the repository but keeps it in the working directory?
+A) git rm <filename>
+B) git rm --cached <filename>
+C) git rm -f <filename>
+D) git reset <filename>
+Ans:B) git rm --cached <filename>
+--------------------------
+3. What happens if you use git rm -f <filename>?
+A) The file is removed from the staging area only
+B) The file is permanently deleted without confirmation
+C) The file is removed from both the working directory and the staging area, even if modified
+D) Git throws an error if the file is modified
+Ans:C) The file is removed from both the working directory and the staging area, even if modified
+--------------------------
+4. How do you remove all files in a directory using git rm?
+A) git rm -r <directory>
+B) git rm <directory>
+C) git rm --all <directory>
+D) git remove <directory>
+Ans:A) git rm -r <directory>
+--------------------------
+5. What is the difference between git rm <filename> and git rm --cached <filename>?
+A) git rm removes the file from both working directory and Git, while git rm --cached removes it only from Git but keeps it in the working directory
+B) They both do the same thing
+C) git rm stages the file for deletion, while git rm --cached permanently deletes the file
+D) git rm only unstages the file
+Ans:A) git rm removes the file from both working directory and Git, while git rm --cached removes it only from Git but keeps it in the working directory
+--------------------------
+6. What must be done after running git rm to finalize the removal?
+A) Run git reset
+B) Run git commit
+C) Run git revert
+D) Run git stash
+Ans:B) Run git commit
+--------------------------
+7. Which command removes a file even if it has been modified?
+A) git rm --cached <filename>
+B) git rm <filename>
+C) git rm -f <filename>
+D) git rm -r <filename>
+Ans:C) git rm -f <filename>
+--------------------------
+8. How do you remove multiple specific files at once?
+A) git rm file1.txt file2.txt
+B) git rm --all
+C) git rm *
+D) git delete file1.txt file2.txt
+Ans:A) git rm file1.txt file2.txt
+--------------------------
+9. What does git rm --dry-run <filename> do?
+A) Removes the file permanently
+B) Shows which files would be removed without actually deleting them
+C) Restores a deleted file
+D) Moves a file to a different branch
+Ans:B) Shows which files would be removed without actually deleting them
+--------------------------
+10. What happens if you remove a file manually and then run git rm?
+A) Git throws an error
+B) The file is staged for deletion
+C) The file is restored
+D) Nothing happens
+Ans:B) The file is staged for deletion
+--------------------------
+Q. What is difference between below commands?
+   1. git rm file-name 
+   2. git rm -f file-name
+Ans: If file is modified then first command can't delete that file but 
+     second delete a file even if it is modified.
+
+Q. git rm --cached file-name
+-> unstage a file 
+
+Q. Tell below syntax is valid or not?
+   git rm directory-name 
+-> If we want to delete a directory then its mandatory to use -r 
+   option otherwise we will get an error.
+
+Q. What will happens if below commands executed.
+   1. git rm -f directory-name
+   -> Above command will throw an error because it is directory
+   correct syntax: git rm -r directory-name
+   
+   2. git rm --cached file-name
+   -> Specified file get unstaged 
+   
+   3. git rm --cached -f file-name
+   -> unstage and delete 
+   
+   3. git rm --cached directory-name
+   -> It will throw an error because it is directory
+   correct syntax is git rm --cached -r directory-name
+   4. git rm --cached -r directory-name
+n   
+   -> unstage directory and delete it.
+   
+   5. git rm --cached -rf directory-name
+   -> unstage and delete directory forefully.
+
+Q. What is difference between below commands?
+   1. git rm -r directory-name  
+   2. git rm -rf directory-name
+-> Ans: First command delete a directory if there is not file modified
+        second command delete directory forefully even if there are 
+		modified files.
+   
