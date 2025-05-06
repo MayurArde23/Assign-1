@@ -4,7 +4,7 @@ Date:11 March 2025
 A) Deletes files from the repository
 B) Moves files to the remote repository
 C) Stages changes for the next commit
-D) Commits changes directly
+D) Commits changes directlyy
 
 ANS: stages chnages for the next commit
 
